@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(00,0,0.5);
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    background-color: blueviolet;
+
+}
+button:hover {
+    background-color: rgb(93, 26, 156);
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: purple;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+
+}
+
+header img{
+    height: 150px;
+    margin: 0;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+header nav .instagram{
+  
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover {
+    color: black;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#somos-hispano{
+
+}
+
+#somos-hispano .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-servidores {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-servidores .container{
+    padding: 150px 12px;
+}
+
+#nuestros-servidores h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-servidores p{
+    display: none;
+
+}
+
+#nuestros-servidores .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 20px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("cartafirst.png");
+   
+    background-size: cover;
+    background-position: center center;
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("minecraft2.png");
+    
+    background-size: cover;
+    background-position: center center;
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("redm.png");
+
+    background-size: cover;
+    background-position: center center;
+}
+
+footer {
+    background-color: purple;
+
+}
+
+footer p{
+    margin 0;
+    color: white;
+}
+
+footer .container{
+    height: 150px;
+}
+
+footer a{
+    color: white;
+    display: flex;
+    font-weight: 50px;
+}
