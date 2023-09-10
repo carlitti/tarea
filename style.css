@@ -214,9 +214,12 @@ footer {
 }
 
 footer p{
-    margin 0;
-    padding: 2px;
     color: white;
+    margin: 0;
+}
+
+.nav-link {
+    margin: 10px;
 }
 
 footer .container{
