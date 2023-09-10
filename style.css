@@ -1,5 +1,29 @@
+// Functions first
+@import "../node_modules/bootstrap/scss/functions";
+
+// Variable overrides second
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Required Bootstrap imports
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Optional components
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
 *{
     box-sizing: border-box;
+
 
 }
 
@@ -38,7 +62,7 @@ button:hover {
 
 
 .container {
-    max-width: 1400px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -49,6 +73,7 @@ header {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    
 }
 
 header .logo {
@@ -58,12 +83,13 @@ header .logo {
 }
 
 header img{
-    height: 150px;
+    height: 100px;
     margin: 0;
 
 }
 
 header nav{
+    color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -75,9 +101,8 @@ header nav .instagram{
   
 }
 
-
 header a{
-    padding: 5px 12px;
+    padding: 8px 12px;
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -86,6 +111,7 @@ header a{
 header a:hover {
     color: black;
 }
+
 
 #hero{
     display: flex;
@@ -135,7 +161,6 @@ header a:hover {
 }
 
 #nuestros-servidores p{
-   
 
 }
 
@@ -185,20 +210,91 @@ header a:hover {
 
 footer {
     background-color: purple;
-
+    margin: 0;
 }
 
 footer p{
     margin 0;
+    padding: 2px;
     color: white;
 }
 
 footer .container{
-    height: 150px;
+    margin: 0;
+    height: 100px;
 }
 
-footer a{
-    color: white;
+footer .container {
+    height: 100px;
     display: flex;
-    font-weight: 50px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    
+    header {
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+     header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        }
+
+    nav a{
+        display: flex;
+        padding-right: 10px;
+    }
+
+    #somos-hispano .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-hispano .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #somos-hispano h2{
+        margin-top: 0px;
+    }
+
+    #somos-hispano .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url(elvis.png);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 500px;
+    }
+
+    #nuestros-servidores .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servidores p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+    #nuestros-servidores .carta{
+        padding: 50px;
+    }
 }
